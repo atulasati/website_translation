@@ -1,4 +1,4 @@
-# website_translation-
+# website_translation
 This is script for translating file into Hindi. The script will scrap webiste using Python Library called BeautifulSoup (bs4) which helps us in effective manipulation of HTML
 tags. Deep Translate a Python Library for translation is used for translating the html page into Hindi<br></br>
 To run the scripts:
