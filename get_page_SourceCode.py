@@ -61,7 +61,7 @@ def get_translate(url,i):
                 pass
         
     translated_html = str(soup)
-    file_path = f"/home/hp/Documents/translate_demo/templates/translated_{i}.html"
+    file_path = f"translated_{i}.html"
     with open(file_path, 'w') as f:
         f.write(translated_html)
         # print("file translated successfully.........!!!!!")
