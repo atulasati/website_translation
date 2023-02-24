@@ -1,30 +1,17 @@
-from flask import Flask,render_template
+from flask import Flask, request, render_template
+import get_page_SourceCode
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('translated_index.html')
+    print("start")
+    if request.method == 'POST': 
+        count = request.form.get('count')
+        get_page_SourceCode.start(int(count))
+        return render_template('done.html')
+    return render_template('index.html')
 
-@app.route('/translated_0/')
-def translated_0():
-    return render_template('translated_0.html')
-
-@app.route('/translated_1/')
-def translated_1():
-    return render_template('translated_1.html')
-
-@app.route('/translated_2/')
-def translated_2():
-    return render_template('translated_2.html')
-
-@app.route('/translated_3/')
-def translated_3():
-    return render_template('translated_3.html')
-
-@app.route('/translated_4/')
-def translated_4():
-    return render_template('translated_4.html')
 
     
 
