@@ -10,6 +10,6 @@ Activate the virtual environment: <br> <br>
 `source env/bin/activate` <br> <br>
 Install the project requirements: <br> <br>
 `pip install -r requirement.txt` <br> <br>
-Run the script translation script (It will store the translated page in form of html page (home page by default): <br> <br>
-`python3 translation_scr` <br> <br>
-Please check the translated html files that available in the repository.
+Finally run the Flask App which will render the translated files stored in templates folder: <br> <br>
+`python3 app.py` <br> <br>
+
